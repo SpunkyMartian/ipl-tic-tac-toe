@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #player-info, #team-inputs, #timers, .board-container {
+    margin: 10px;
+  }
+  
+  input[type="text"], input[type="number"] {
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  #turn-header {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    border: 2px solid #333;
+  }
+  
+  .cell.X {
+    background-color: rgb(13, 190, 81);
+    color: white;
+  }
+  
+  .cell.O {
+    background-color: rgb(31, 58, 164);
+    color: white;
+  }
+  
+  .col-names, .row-names {
+    display: flex;
+  }
+  
+  .col-names {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+  
+  .row-names {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .board-container {
+    display: flex;
+  }
+  
+  #timers div {
+    margin: 5px;
+  }
+  
+  .col-names span, .row-names div {
+    text-align: center;
+    /* Adjust the following margins to center align with rows and columns */
+    margin: auto;
+}
+
+.cell {
+    /* ... [existing .cell styles] ... */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPL Tic Tac Toe Game</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>IPL Tic Tac Toe Game</h1>
+
+<!-- Player info section for names and timer setting -->
+<div id="player-info">
+    <input type="text" id="player-x-name" placeholder="Player X Name">
+    <input type="text" id="player-o-name" placeholder="Player O Name">
+    <input type="number" id="game-timer" placeholder="Game Timer (in seconds)">
+    <button id="set-game">Set Game</button>
+</div>
+
+<div id="turn-header" style="display: none;"></div> <!-- Hidden initially -->
+
+<!-- Team input section for IPL teams -->
+<div id="team-inputs" style="display: none;">
+    <div>
+        <input type="text" id="team-row1" placeholder="Row 1 Team">
+        <input type="text" id="team-row2" placeholder="Row 2 Team">
+        <input type="text" id="team-row3" placeholder="Row 3 Team">
+    </div>
+    <div>
+        <input type="text" id="team-col1" placeholder="Column 1 Team">
+        <input type="text" id="team-col2" placeholder="Column 2 Team">
+        <input type="text" id="team-col3" placeholder="Column 3 Team">
+    </div>
+    <button id="start-game">Start Game</button>
+</div>
+
+<!-- Timers and game board section, hidden initially -->
+<div id="timers" style="display: none;">
+    <div id="timer-x">Player X: <span id="time-x">00:00</span></div>
+    <div id="timer-o">Player O: <span id="time-o">00:00</span></div>
+</div>
+
+<div id="team-names-display" style="display: block;">
+    <div id="col-names" class="col-names"></div>
+    <div class="board-container">
+        <div id="row-names" class="row-names"></div>
+        <div id="game-board" class="board"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
